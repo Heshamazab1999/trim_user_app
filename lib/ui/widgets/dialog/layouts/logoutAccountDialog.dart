@@ -13,25 +13,14 @@ class LogoutAccountDialog extends StatelessWidget {
           height: 70,
           width: 70,
           padding: const EdgeInsets.all(10),
-
-          color: Theme
-              .of(context)
-              .colorScheme
-              .secondaryColor,
+          color: Theme.of(context).colorScheme.secondaryColor,
           borderRadius: borderRadiusOf50,
-          child:
-          Icon(Icons.help, color: Theme
-              .of(context)
-              .colorScheme
-              .accentColor, size: 70)),
+          child: Image.asset("assets/images/logout_mark.png")),
       title: "confirmLogout",
       description: "areYouSureYouWantToLogout",
       //
       cancelButtonName: "cancel",
-      cancelButtonBackgroundColor: Theme
-          .of(context)
-          .colorScheme
-          .secondaryColor,
+      cancelButtonBackgroundColor: Theme.of(context).colorScheme.secondaryColor,
       cancelButtonPressed: () {
         Navigator.of(context).pop();
       },
@@ -39,7 +28,8 @@ class LogoutAccountDialog extends StatelessWidget {
       confirmButtonName: "logout",
       confirmButtonBackgroundColor: AppColors.redColor,
       confirmButtonPressed: () async {
-        try {//
+        try {
+          //
           //update fcm id
           try {
             await UserRepository().updateFCM(
@@ -51,8 +41,6 @@ class LogoutAccountDialog extends StatelessWidget {
 
           if (response) {
             Future.delayed(Duration.zero, () async {
-
-
               //
               context.read<AuthenticationCubit>().checkStatus();
               context.read<UserDetailsCubit>().clearCubit();

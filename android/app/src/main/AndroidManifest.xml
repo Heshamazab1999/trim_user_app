@@ -18,7 +18,7 @@
         android:allowBackup="false"
         android:fullBackupOnly="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="TrimApp"
+        android:label="Trim"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         >

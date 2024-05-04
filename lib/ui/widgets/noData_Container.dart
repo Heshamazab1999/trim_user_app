@@ -28,7 +28,7 @@ class NoDataContainer extends StatelessWidget {
           children: [
             CustomSizedBox(
               height: MediaQuery.sizeOf(context).height * (0.35),
-              child: CustomSvgPicture(svgImage: 'no_data_found'),
+              child: Image.asset("assets/images/no_data.png"),
             ),
             CustomSizedBox(
               height: MediaQuery.sizeOf(context).height * (0.025),

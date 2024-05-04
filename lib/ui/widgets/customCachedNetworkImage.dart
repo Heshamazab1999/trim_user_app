@@ -23,12 +23,12 @@ class CustomCachedNetworkImage extends StatelessWidget {
           height: height,
           colorFilter: ColorFilter.mode(Theme.of(context).colorScheme.accentColor, BlendMode.srcIn),
           placeholderBuilder: (final BuildContext context) => Center(
-            child: CustomSvgPicture(
-              svgImage: 'place_holder',
-              width: width,
-              height: height,
-              boxFit: BoxFit.contain,
-            ),
+            child: Image.asset("assets/images/place_holder.png"
+                // svgImage: 'place_holder',
+                // width: width,
+                // height: height,
+                // boxFit: BoxFit.contain,
+                ),
           ),
         )
       : CachedNetworkImage(

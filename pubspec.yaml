@@ -70,7 +70,7 @@ dependencies:
   flutter_paystack: ^1.0.7
   flutter_stripe: ^10.1.1
   firebase_core_platform_interface: ^4.5.2
-  rive: ^0.11.1
+  rive:
   http_parser: ^4.0.2
   mime: ^1.0.3
   version: ^3.0.2
@@ -146,11 +146,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: PlusJakartaSans
+    - family: Cairo
       fonts:
-        - asset: assets/fonts/PlusJakartaSans-Regular.ttf
-        - asset: assets/fonts/PLUSJAKARTASANS-MEDIUM.ttf
-        - asset: assets/fonts/PLUSJAKARTASANS-BOLD.ttf
+        - asset: assets/fonts/Cairo-Regular.ttf
+#        - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+#        - asset: assets/fonts/PLUSJAKARTASANS-MEDIUM.ttf
+#        - asset: assets/fonts/PLUSJAKARTASANS-BOLD.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

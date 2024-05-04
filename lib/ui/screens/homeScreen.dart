@@ -17,11 +17,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   //
   List<String> searchValues = [
-    "searchProviders",
-    "searchServices",
-    "searchElectronics",
+    // "searchProviders",
+     "searchServices",
+    // "searchElectronics",
     "searchHairCutting",
-    "searchFanRepair"
+    // "searchFanRepair"
   ];
   late ValueNotifier<int> currentSearchValueIndex = ValueNotifier(0);
   late final AnimationController _animationController =
@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   controller: widget.scrollController,
                                   padding: EdgeInsets.only(
                                     bottom: getScrollViewBottomPadding(context) + cartButtonHeight,
-                                  ),
+                                  ), 
                                   child: Column(
                                     children: [
                                       homeScreenState.homeScreenData.sliders!.isEmpty
@@ -587,7 +587,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   image: sectionData.subCategories[index].image!,
                   discount: "0",
                   cardHeight: 200,
-                  imageHeight: 135,
+                  imageHeight: 100,
                   imageWidth: 120,
                   onTap: () async {
                     await Navigator.pushNamed(
@@ -607,7 +607,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   image: sectionData.partners[index].image!,
                   discount: sectionData.partners[index].discount!,
                   cardHeight: 200,
-                  imageHeight: 135,
+                  imageHeight: 100,
                   imageWidth: 120,
                   onTap: () {
                     Navigator.pushNamed(

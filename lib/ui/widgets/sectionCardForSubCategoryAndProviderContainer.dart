@@ -91,12 +91,11 @@ class SectionCardForCategoryAndProviderContainer extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 5),
               child: CustomText(title,
-                  maxLines: 2,
-
+               // /   maxLines: 2,
                       color: Theme.of(context).colorScheme.blackColor,
                       fontStyle: FontStyle.normal,
-                      fontSize: 16,
-                  textAlign: TextAlign.left,),
+                      fontSize: 14,
+                  textAlign: TextAlign.right,),
             ),
           ],
         ),

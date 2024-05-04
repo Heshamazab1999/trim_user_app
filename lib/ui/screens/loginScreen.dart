@@ -22,7 +22,6 @@ class LogInScreen extends StatefulWidget {
     );
   }
 }
-
 class _LogInScreenState extends State<LogInScreen> {
   String phoneNumberWithCountryCode = "";
   String onlyPhoneNumber = "";

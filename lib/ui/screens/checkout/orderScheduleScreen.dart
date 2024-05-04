@@ -110,7 +110,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
 
   late final List<Map<String, String>> deliverableOptions = [
     {"title": 'atHome', "description": 'atHomeDescription', "image": "home"},
-    {"title": 'atStore', "description": 'atStoreDescription', "image": "store"},
+    {"title": 'atStore', "description": 'atSalon', "image": "store"},
   ];
   late String selectedDeliverableOption = deliverableOptions[0]['title']!;
 

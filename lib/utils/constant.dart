@@ -80,19 +80,19 @@ List<IntroScreen> introScreenList = [
   IntroScreen(
     introScreenTitle: "onboarding_heading_one",
     introScreenSubTitle: "onboarding_body_one",
-    imagePath: "image_a.png",
+    imagePath: "image_a.jpg",
     animationDuration: 3, /* DURATION IS IN SECONDS*/
   ),
   IntroScreen(
     introScreenTitle: "onboarding_heading_two",
     introScreenSubTitle: "onboarding_body_two",
-    imagePath: "image_b.png",
+    imagePath: "image_b.jpg",
     animationDuration: 3, /* DURATION IS IN SECONDS*/
   ),
   IntroScreen(
     introScreenTitle: "onboarding_heading_three",
     introScreenSubTitle: "onboarding_body_three",
-    imagePath: "image_c.png",
+    imagePath: "image_c.jpg",
     animationDuration: 3, /* DURATION IS IN SECONDS*/
   ),
 ];

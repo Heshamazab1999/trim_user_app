@@ -265,11 +265,7 @@ class _ProfileState extends State<Profile> {
                                                               HiveRepository
                                                                       .getUserProfilePictureURL ==
                                                                   '')
-                                                          ? CustomSvgPicture(
-                                                              svgImage: "dr_profile",
-                                                              color: Theme.of(context)
-                                                                  .colorScheme
-                                                                  .blackColor,
+                                                          ? Image.asset("assets/images/profile.png"
                                                             )
                                                           : CustomCachedNetworkImage(
                                                               height: 100,

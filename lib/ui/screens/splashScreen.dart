@@ -172,11 +172,11 @@ class _SplashScreenState extends State<SplashScreen> {
               child: (context.read<AppThemeCubit>().state.appTheme ==
                       AppTheme.light)
                   ? Image.asset(
-                      "assets/images/splash_light.png",
+                      "assets/images/splash_light.jpg",
                       fit: BoxFit.cover,
                     )
                   : Image.asset(
-                      "assets/images/splash_dark.png",
+                      "assets/images/splash_dark.jpg",
                       fit: BoxFit.cover,
                     ),
             );

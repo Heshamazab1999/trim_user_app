@@ -1,3 +1,4 @@
+import 'package:e_demand/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 import '../../app/generalImports.dart';
@@ -32,16 +33,14 @@ class CustomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-
-      maxLines: maxLines ??3,
+      maxLines: maxLines ?? 3,
       softWrap: true,
       overflow: TextOverflow.ellipsis,
-      style: TextStyle(
+      style: cairoRegular.copyWith(
           color: color ?? Theme.of(context).colorScheme.blackColor,
           fontWeight: fontWeight,
           fontStyle: fontStyle,
           fontSize: fontSize,
-
           decoration: showLineThrough ?? false
               ? TextDecoration.lineThrough
               : showUnderline ?? false
